@@ -1,12 +1,12 @@
 package xyz.tahakhan.DataStructures;
 
-import xyz.tahakhan.DataStructures.Interfaces.QuickFind;
+import xyz.tahakhan.DataStructures.Interfaces.UFQuickFind;
 
-public class QuickFindImpl implements QuickFind {
+public class UFQuickFindImpl implements UFQuickFind {
 
     private int[] QFArray;
 
-    public QuickFindImpl(int capacity) {
+    public UFQuickFindImpl(int capacity) {
         QFArray = new int[capacity];
         for (int i = 0; i < QFArray.length; i++)
         {

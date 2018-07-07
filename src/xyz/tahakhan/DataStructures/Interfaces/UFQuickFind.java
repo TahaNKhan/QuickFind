@@ -1,6 +1,6 @@
 package xyz.tahakhan.DataStructures.Interfaces;
 
-public interface QuickFind {
+public interface UFQuickFind {
 
     boolean connected(int p, int q);
 
