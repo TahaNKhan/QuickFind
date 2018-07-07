@@ -16,11 +16,17 @@ public class QuickFindImpl implements QuickFind {
 
     @Override
     public boolean connected(int p, int q) {
+        if (p >= QFArray.length || q >= QFArray.length) {
+            throw new IllegalArgumentException();
+        }
         return QFArray[p] == QFArray[q];
     }
 
     @Override
     public void union(int p, int q) {
+        if (p >= QFArray.length || q >= QFArray.length) {
+            throw new IllegalArgumentException();
+        }
         int arbitraryNumber = QFArray[p];
         for (int i = 0; i < QFArray.length; i++) {
            if (QFArray[i] == QFArray[q])
